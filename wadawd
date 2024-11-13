@@ -1,0 +1,104 @@
+--Template by EpicEditEmporium on discord
+local Animation = 18903642853
+local StartTime = 0 -- what duration it starts like video
+local Speed = 1 -- animation speed
+local Duration= 8 -- how much till the animation stops
+
+local a = Instance.new("Animation")
+a.AnimationId = "rbxassetid://" .. Animation
+local p = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(a)
+p:Play()
+p.TimePosition = StartTime -- what duration it starts like video
+p:AdjustSpeed(1)
+delay(Duration, function() -- delete these 3 lines if you don't want to stop it or you can adjust 7 to less or longer to stop animation 
+p:Stop()
+end)                                                                                                 local particleEffect = game.ReplicatedStorage.Resources.Sorcerer.WallFX.FirstSlam.Attachment
+
+local clonedEffect1 = particleEffect:Clone()
+
+clonedEffect1.Parent = game.Players.LocalPlayer.Character["HumanoidRootPart"]
+
+for _, child in ipairs(clonedEffect1:GetChildren()) do
+    if child:IsA("ParticleEmitter") then
+        child:Emit(9)
+    end
+end                                                                                                  wait(1.2)                                                                                        clonedEffect1:Destroy()                                                           local particleEffect = game.ReplicatedStorage.Resources.Sorcerer.LimitlessBarrier.Core.Appear
+
+local clonedEffect1 = particleEffect:Clone()
+
+clonedEffect1.Parent = game.Players.LocalPlayer.Character["HumanoidRootPart"]
+
+for _, child in ipairs(clonedEffect1:GetChildren()) do
+    if child:IsA("ParticleEmitter") then
+        child:Emit(9)
+    end
+end
+--Template by EpicEditEmporium on discord                                                                                             local location = game.ReplicatedStorage.Resources.Sorcerer.LimitlessBarrier.Core.Attachment
+local vfx1 = location:Clone()
+vfx1.Parent = game.Players.LocalPlayer.Character["HumanoidRootPart"]
+
+for _, child in ipairs(vfx1:GetChildren()) do
+    if child:IsA("ParticleEmitter") then
+        child:Emit(20)
+        child.Enabled = true
+    end
+end                                                                                                  local location = game.ReplicatedStorage.Resources.Sorcerer.LimitlessBarrier.Core.BarrierFX
+local vfx = location:Clone()
+vfx.Parent = game.Players.LocalPlayer.Character["HumanoidRootPart"]
+
+for _, child in ipairs(vfx:GetChildren()) do
+    if child:IsA("ParticleEmitter") then
+        child:Emit(20)
+        child.Enabled = true
+    end
+end
+local location = game.ReplicatedStorage.Resources.Sorcerer.LimitlessBarrier.Core.Attachment
+local vfx2 = location:Clone()
+vfx2.Parent = game.Players.LocalPlayer.Character["HumanoidRootPart"]
+
+for _, child in ipairs(vfx2:GetChildren()) do
+    if child:IsA("ParticleEmitter") then
+        child:Emit(20)
+        child.Enabled = true
+    end
+end
+local location = game.ReplicatedStorage.Resources.Sorcerer.LimitlessBarrier.Core.Attachment
+local vfx3 = location:Clone()
+vfx3.Parent = game.Players.LocalPlayer.Character["HumanoidRootPart"]
+
+for _, child in ipairs(vfx3:GetChildren()) do
+    if child:IsA("ParticleEmitter") then
+        child:Emit(20)
+        child.Enabled = true
+    end
+end
+local location = game.ReplicatedStorage.Resources.Sorcerer.LimitlessBarrier.Core.Attachment
+local vfx4 = location:Clone()
+vfx4.Parent = game.Players.LocalPlayer.Character["HumanoidRootPart"]
+
+for _, child in ipairs(vfx4:GetChildren()) do
+    if child:IsA("ParticleEmitter") then
+        child:Emit(20)
+        child.Enabled = true
+    end
+end                                                                                        wait(2.3)                                                                                        vfx:Destroy()                                                                                vfx1:Destroy()                                                                                  vfx2:Destroy()                                                     vfx3:Destroy()                                                                                  vfx4:Destroy()                                                                                                                                                                                                                                                                                                                                                                                                      wait(0.3)                                                                                        local particleEffect = game.ReplicatedStorage.Resources.Sorcerer.WallFX.Final.At
+
+local clonedEffect1 = particleEffect:Clone()
+
+clonedEffect1.Parent = game.Players.LocalPlayer.Character["HumanoidRootPart"]
+
+for _, child in ipairs(clonedEffect1:GetChildren()) do
+    if child:IsA("ParticleEmitter") then
+        child:Emit(30)
+    end
+end                                                                                                                                                                   local particleEffect = game.ReplicatedStorage.Resources.Sorcerer.WallFX.Final.Attachment
+
+local clonedEffect2 = particleEffect:Clone()
+
+clonedEffect2.Parent = game.Players.LocalPlayer.Character["HumanoidRootPart"]
+
+for _, child in ipairs(clonedEffect2:GetChildren()) do
+    if child:IsA("ParticleEmitter") then
+        child:Emit(10)
+    end
+end                                                                                                 wait(7)                                                                                          clonedEffect1:Destroy()                                                            clonedEffect2:Destroy()
